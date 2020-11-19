@@ -1,0 +1,54 @@
+.container
+{
+    margin-top: 1.5%;
+    border-style: solid;
+    border-width: 15px;
+    background-color: #00001a;
+    width: 80%;
+    margin-left: 8%;
+}
+.container1
+{
+    text-align: center;
+    color: white;
+}
+.container2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.container4
+{
+    margin-top: 1%;
+    text-align: center;
+}
+.container5
+{
+    width: 40%;
+    margin-left:28%;
+}
+.button1
+{
+    margin-top: 1%;
+    width: 10%;
+    height: 30px;
+    font-weight: bold;
+    color: #00001a;
+    background-color:#b8b894;
+    cursor: pointer;
+}
+.button1:hover
+{
+    background-color: #ffffff;
+    color: #00001a;
+}
+.input1
+{
+    padding-bottom: 1%;
+    padding-left: 5%;
+}
