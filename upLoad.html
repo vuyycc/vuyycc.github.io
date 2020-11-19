@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-storage.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCSGYZfvANnaGkSQBaF6b7XlFO9X0cAgR8",
+            authDomain: "reviewbook-ci50.firebaseapp.com",
+            databaseURL: "https://reviewbook-ci50.firebaseio.com",
+            projectId: "reviewbook-ci50",
+            storageBucket: "reviewbook-ci50.appspot.com",
+            messagingSenderId: "221399265629",
+            appId: "1:221399265629:web:6bd49404061f368839b8b4"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <link href="./css/upLoad.css" rel="stylesheet">
+</head>
+<body style="background-image: url('img/stack-thick-books-with-beautiful-light-bokeh-background_39392-277.jpg');background-size: cover;">
+        <div class="container">
+            <div class="container1">
+                <h1>Custom File Upload</h1>
+                <h3>In this example, submit is allowed only in case user upload a valid file</h3>
+            </div>
+            <form id = "uploadForm" class="container2">
+                <img width="200" height="200" src="./img/File-512.png" alt="" id="previewImg">
+                <h3>Only image and pdf allowed</h3>
+                <input type="file" name="files" id="bookFile" class="input1">
+                <div class="container4">
+                    <label for="Author" class="label">Author</label>
+                </div>
+                <div class="container5">
+                    <input type="text" placeholder="Enter Author's Name" name="author" id="author" required>
+                </div>
+                <div class="container4">
+                    <label for="category" class="label">Book's Category</label>
+                </div>
+                <div class="container5">
+                    <input type="text" placeholder="Enter Book's Category" name="category" id="category" required>
+                </div>
+                <div class="container4">
+                    <label for="name" class="label">Book's Name</label>
+                </div>
+                <div class="container5">
+                    <input type="text" placeholder="Enter Book's Name" name="name" id="name" required>
+                </div>
+                <div class="container4">
+                    <label for="price" class="label">Book's Price</label>
+                </div>
+                <div class="container5">
+                    <input type="text" placeholder="Enter Book's Price" name="price" id="price" required>
+                </div>
+                <div class="container4">
+                    <label for="pulishedDate" class="label">PulishedDate</label>
+                </div>
+                <div class="container5">
+                    <input type="text" placeholder="Enter PulishedDate" name="date" id="date" required>
+                </div>
+                <!-- <div class="container4">
+                    <label for="Source" class="label">Source</label>
+                </div> -->
+                <!-- <div class="container5">
+                    <input type="link" placeholder="Enter Source" name="source" id="source" required>
+                </div> -->
+                    <button type="submit" class="button1" id="upload">Upload</button>
+            </form>
+        </div>
+</body>
+<script src="./js/upLoad.js"></script>
+</html>

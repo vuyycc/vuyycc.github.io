@@ -1,0 +1,13 @@
+{
+  "name": "QLB",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "proxy": "lcp --proxyUrl https://firebasestorage.googleapis.com/v0/b/reviewbook-ci50.appspot.com/o" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

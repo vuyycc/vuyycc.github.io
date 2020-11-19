@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="./extras/jquery.min.1.7.js"></script>
+        <script type="text/javascript" src="./lib/turn.min.js"></script>
+        <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+
+    <script src="//unpkg.com/navigo@6"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCSGYZfvANnaGkSQBaF6b7XlFO9X0cAgR8",
+            authDomain: "reviewbook-ci50.firebaseapp.com",
+            databaseURL: "https://reviewbook-ci50.firebaseio.com",
+            projectId: "reviewbook-ci50",
+            storageBucket: "reviewbook-ci50.appspot.com",
+            messagingSenderId: "221399265629",
+            appId: "1:221399265629:web:6bd49404061f368839b8b4"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+<body>
+    <div id="navbar">
+        <label id="logo">Minix Book</label>
+        <form action="" id="form-search">
+            <input type="text" id="search" placeholder="Search">
+        </form>
+        <div id="upload">
+            <a href="upLoad.html">Upload a Book</a>
+        </div>
+    </div>
+    <div id="full-page">
+        <book-shelf category="Comedy" idB="fzujksHEpmgkF8PsGRbr"></book-shelf>
+        <book-shelf category="Horror" idB="QZHSd0JORVohAuv3xXfB"></book-shelf>
+        <book-shelf category="Comic" idB="RPC8GQIZL3ayOldnLbAI"></book-shelf>
+        <book-shelf category="Novel" idB="TbSgSxfzLCz5W5JC6NA7"></book-shelf>
+        <book-shelf category="Vietnamese Literature" idB="X5CSAHdyjHtaBC1yAqS"></book-shelf>
+        <book-shelf category="Romantic" idB="bA3PyvU5VClJGMPnBZnE"></book-shelf>
+       
+    </div>
+    <div style="width: 100%;height: 100px;background-color: #EEDBC3"></div>
+    
+    <div id="modal">
+        <div id="content">
+            <span class="close">&times;</span>
+            <div id="flipbook">
+            </div>
+        </div>
+    </div>
+    <div id="modal1">
+        <div class="loader"></div>
+    </div>
+</body>
+
+<template id="book-shelf-template">
+    <link rel="stylesheet" href="./css/bookShelf.css">
+        <div class="book-shelf">
+            <div class="category" id="cate"></div>
+            <div id="bs-body">              
+                   
+                </div>
+        </div>
+</template>
+
+<template id="book-template">
+    <link rel="stylesheet" href="./css/book.css">
+        <div id="the-canvas"></div>
+</template>
+<script src="./js/app.js" type="module"></script>
+</html>
